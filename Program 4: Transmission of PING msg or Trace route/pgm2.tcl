@@ -10,7 +10,7 @@ global ns nf tf
 $ns flush-trace
 close nf
 close tf
-exec nam pgm1.nam &
+exec nam pgm2.nam &
 exit 0
 }
 
