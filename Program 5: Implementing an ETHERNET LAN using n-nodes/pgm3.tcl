@@ -62,13 +62,13 @@ $tcp0 trace cwnd_
 $tcp2 trace cwnd_
 
 $ns at 0.1 "$ftp0 start"
-$ns at 5 "$ftp0 start"
+$ns at 5 "$ftp0 stop"
 $ns at 7 "$ftp0 start"
 $ns at 0.2 "$ftp2 start"
-$ns at 8 "$ftp2 start"
-$ns at 14 "$ftp0 start"
+$ns at 8 "$ftp2 stop"
+$ns at 14 "$ftp0 stop"
 $ns at 10 "$ftp2 start"
-$ns at 15 "$ftp2 start"
+$ns at 15 "$ftp2 stop"
 $ns at 16 "finish"
 
 $ns run
