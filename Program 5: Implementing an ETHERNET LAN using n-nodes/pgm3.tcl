@@ -29,7 +29,7 @@ set n5 [$ns node]
 $n5 color "yellow"
 $n5 label "dest1"
 
-$ns make-lan "$n0 $n1 $n2 $n3 $n4" 100Mb 100ms
+$ns make-lan "$n0 $n1 $n2 $n3 $n4" 100Mb 100ms LLQueue/DropTail Mac/802_3
 $ns duples-link $n4 $n5 1Mb 1ms DropTail
 
 set tcp0 [new Agent/TCP]
