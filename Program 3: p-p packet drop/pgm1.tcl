@@ -46,7 +46,7 @@ $ns attach-agent $n2 $udp2
 set cbr2 [new Application/Traffic/CBR]
 $cbr1 attach-agent $udp2
 
-set null0 [new Application/NULL]
+set null0 [new Agent/NULL]
 $ns attach-agent $n3 $null0
 
 $ns connect $udp0 $null0
