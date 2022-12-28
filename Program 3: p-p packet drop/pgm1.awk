@@ -1,4 +1,4 @@
-BEGIN {
+BEGIN{
 c=0;
 }
 {
@@ -8,6 +8,6 @@ c++;
 printf("%s\t%s\n",$5,$11);
 }
 }
-END {
+END{
 printf("The number of packets dropped is = %d\n",c);
 }
