@@ -2,7 +2,7 @@ set ns [new Simulator]
 set nf [open pgm2.nam w]
 $ns namtrace-all $nf
 
-set nf [open pgm2.tr w]
+set tf [open pgm2.tr w]
 $ns trace-all $tf
 
 proc finish {} {
