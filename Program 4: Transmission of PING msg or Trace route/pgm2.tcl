@@ -53,7 +53,7 @@ $ns queue-limit $n4 $n5 2
 
 Agent/Ping instproc recv {from rtt}{
 $self instvar node_
-puts"node [$node_id] received answer from $from with round trip $rtt msec"
+puts "node [$node_ id] received answer from $from with round trip $rtt msec"
 }
 
 $ns connect $p1 $p5
