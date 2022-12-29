@@ -45,7 +45,7 @@ set p4 [new Agent/Ping]
 $ns attach-agent $n3 $p4
 
 set p5 [new Agent/Ping]
-$ns attach-agent $n4 $p5
+$ns attach-agent $n5 $p5
 
 $ns queue-limit $n0 $n4 5
 $ns queue-limit $n2 $n4 3
