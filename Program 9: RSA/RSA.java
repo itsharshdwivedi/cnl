@@ -7,13 +7,13 @@ class RSA
 	{
 		Scanner sc=new Scanner(System.in);
 		int p,q,n,z,d=0,e,i;
-		System.out.println("Enter the plaintext(number) to be encrypted and decrypted");
+		System.out.println("Enter the plaintext(number) to be encrypted and decrypted: ");
 		int msg=sc.nextInt();
 		double c;
 		BigInteger msgback; 
-		System.out.println("Enter 1st prime number p");
+		System.out.println("Enter 1st prime number p: ");
 		p=sc.nextInt();
-		System.out.println("Enter 2nd prime number q");
+		System.out.println("Enter 2nd prime number q: ");
 		q=sc.nextInt();
 		
 		n=p*q;
@@ -46,11 +46,12 @@ class RSA
 		//converting float value of c to BigInteger
 		BigInteger C = BigDecimal.valueOf(c).toBigInteger();
 		msgback = (C.pow(d)).mod(N);
-		System.out.println("Derypted message is : -");
+		System.out.println("Decrypted message is : -");
 		System.out.println(msgback);
 
 	}
-static int gcd(int e, int z)
+	
+	static int gcd(int e, int z)
 	{
 		if(e==0)
 			return z;	
