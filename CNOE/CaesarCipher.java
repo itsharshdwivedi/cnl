@@ -18,7 +18,6 @@ public class CaesarCipher
         return encryptStr;   
     }   
       
-       
     public static String decryptData(String inputStr, int shiftKey)   
     {   
       inputStr = inputStr.toLowerCase();   
@@ -35,7 +34,6 @@ public class CaesarCipher
         }   
         return decryptStr;   
     }   
-      
       
     public static void main(String[] args)   
     {   
