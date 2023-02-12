@@ -47,8 +47,6 @@ public class CaesarCipher
           
         System.out.println("Encrypted Data ===> "+encryptData(inputStr, shiftKey));   
         System.out.println("Decrypted Data ===> "+decryptData(encryptData(inputStr, shiftKey), shiftKey));   
-          
-           
         sc.close();   
     }   
 }
