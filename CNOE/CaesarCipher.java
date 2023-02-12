@@ -1,6 +1,6 @@
 import java.util.Scanner;   
        
-public class CaesarCipherExample   
+public class CaesarCipher  
 {   
     public static final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";   
       
