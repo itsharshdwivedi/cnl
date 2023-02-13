@@ -4,7 +4,6 @@ import java.nio.file.*;
 
 public class TCPServer 
 {
-
 	public static void main(String[] args) throws IOException 
 	{
 		ServerSocket server;
@@ -28,9 +27,7 @@ public class TCPServer
 	} 
 		catch (Exception e) 
 		{
-			
-
-System.out.println(e.getMessage());
+			System.out.println(e.getMessage());
 			out.writeUTF("FILE DOESN'T EXISTS");
 		}
 	}
