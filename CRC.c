@@ -6,12 +6,16 @@ void crc()
 {
   int i,j,keylen,textlen;
   char temp[100];
+  
   strcpy(temp,text);
   keylen=strlen(key);
+  
   for(i=0;i<keylen-1;i++)
-  strcat(temp,"0");
+    strcat(temp,"0");
+  
   textlen=strlen(temp);
   strncpy(rem,temp,keylen);
+  
   while(i!=textlen)
   {
     if(rem[0]=='0')
@@ -22,7 +26,7 @@ void crc()
       continue;
     }
     for(j=0;j<keylen;j++)
-    rem[j]=((rem[j]-'0')^(key[j]-'0'))+'0';
+      rem[j]=((rem[j]-'0')^(key[j]-'0'))+'0';
     }
 }
 
@@ -38,26 +42,26 @@ void main()
     switch(choice)
     {
       case 1:
-              printf("Enter the i/p\n");
+              printf("Enter the input:\n");
               scanf("%s",text);
-              printf("Enter the key\n");
+              printf("Enter the key:\n");
               scanf("%s",key);
               crc();
-              printf("Msg %s \n",strcat(text,rem));
+              printf("Msg: %s \n",strcat(text,rem));
               break;
       case 2:
-              printf("Enter the input");
+              printf("Enter the input:");
               scanf("%s",text);
-              printf("\nEnter key");
+              printf("\nEnter key:");
               scanf("%s",key);
               crc();
               for(i=0;i<strlen(key)-1;i++)
-              if(rem[i]=='1')
-              break;
+                if(rem[i]=='1')
+                break;
               if(i==strlen(key)-1)
-              printf("NO ERROR\n");
+                printf("NO ERROR\n");
               else
-              printf("ERROR");
+                printf("ERROR");
               break;
       case 3:
               exit(0);
