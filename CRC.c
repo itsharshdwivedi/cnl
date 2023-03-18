@@ -57,7 +57,7 @@ void main()
               crc();
               for(i=0;i<strlen(key)-1;i++)
                 if(rem[i]=='1')
-                break;
+                  break;
               if(i==strlen(key)-1)
                 printf("NO ERROR\n");
               else
