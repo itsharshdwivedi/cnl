@@ -39,7 +39,7 @@ void main()
             cost[i][j]=infinity;
        }
   
-   printf(" Enter the source matrix:");
+   printf(" Enter the source vector:");
    scanf("%d",&v);
    dij(n,v,cost,dist);
    printf("Shortest path: ");
