@@ -12,7 +12,7 @@ public class TCPServer
 		
 		try 
 		{					
-	       server = new ServerSocket(6000, 1); //port number and num of connections
+	       		server = new ServerSocket(6000, 1); //port number and num of connections
 			System.out.println("Server Waiting for client");
 			Socket socket = server.accept();
 			System.out.println("Client connected ");
@@ -24,7 +24,7 @@ public class TCPServer
 			String fileContent = new String(filedata);
 			out.writeUTF(fileContent.toString());
 			System.out.println("FILE RECEIVED SUCCESSFULLY");
-	} 
+		} 
 		catch (Exception e) 
 		{
 			System.out.println(e.getMessage());
