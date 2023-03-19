@@ -1,7 +1,7 @@
 BEGIN{
 drop = 0;
 }
-If($1="d")
+If($1=="d")
 {
 drop++;
 }
