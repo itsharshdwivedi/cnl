@@ -55,4 +55,4 @@ $ns at 0.1 "$cbr0 start"
 $ns at 0.2 "$cbr1 start"
 $ns at 1.0 "finish"
 
-$ns run\
+$ns run
