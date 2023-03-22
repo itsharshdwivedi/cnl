@@ -34,7 +34,7 @@ $ns duplex-link $n4 $n5 1Mb 1ms DropTail
 
 set tcp0 [new Agent/TCP]
 $ns attach-agent $n0 $tcp0
-set ftp0 [new Agent/FTP]
+set ftp0 [new Application/FTP]
 $ftp0 attach-agent $tcp0
 $ftp0 set packetSize_ 500
 $ftp0 set interval_ 0.0001
@@ -45,7 +45,7 @@ $ns connect $tcp0 $sink5
 
 set tcp2 [new Agent/TCP]
 $ns attach-agent $n2 $tcp2
-set ftp2 [new Agent/FTP]
+set ftp2 [new Application/FTP]
 $ftp2 attach-agent $tcp2
 $ftp2 set packetSize_ 600
 $ftp2 set interval_ 0.001
